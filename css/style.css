@@ -1,6 +1,4 @@
-/* ==========================================================================
-   generic {}
-========================================================================== */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -15,10 +13,13 @@
 
 
   
-   /* ==========================================================================
-   base {}
-========================================================================== */
-
+  
+.hero{
+    height: 650px;
+    background-image: url("../images/hero.svg") ;
+    background-size: cover;
+    background-position: bottom;
+}
 
 
 
@@ -32,30 +33,17 @@
 
   
 
-   /* ==========================================================================
-   mise en page {}
-========================================================================== */
+  
 
 body{
     width: 1280px;
     margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-  
-
-   /* ==========================================================================
-   element/typographie {}
-========================================================================== */
-a{
-    text-decoration: none;
-    color: #000000;
+.header .wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -65,9 +53,104 @@ a{
 
 
 
-
   
 
-   /* ==========================================================================
-   components {}
-========================================================================== */
+   
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.header .wrapper .GrosVelos{
+    font: 900 1.75rem "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+.header .wrapper  nav{
+    font: 700 1.125rem "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 40px;
+}
+nav li a:hover{
+    color: #D300B7;
+    
+}
+.BILLETS{
+
+    font: 700 1.125rem "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    color: #D300B7;
+    border: 4px solid #D300B7;
+    border-radius: 56px;
+    padding: 10px 30px 10px 30px;
+}
+
+.contenu{
+    background-color: #000000;
+
+}
+.contenu .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenu .wrapper .circuits h1{
+    font: 700 3rem "Raleway", sans-serif;
+    line-height: 110%;
+    color: #ffffff;
+}
+.contenu .wrapper .circuits p{
+    font: 400 1.125rem 'Roboto', sans-serif;
+    line-height: 160%;
+    color: #ffffff;
+}
+.contenu .wrapper .circuits{
+
+}
+.articles{
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+.articles p {
+    font: 400 1.125rem 'Roboto', sans-serif;
+    line-height: 160%;
+    text-align: center;
+}
+.articles h2{
+    font: 700 2rem "Raleway", sans-serif;
+    line-height: 110%;
+    color: #D300B7;
+    margin: 0;
+}
+article img{
+    width: 330px;
+    height: 220px;
+}
+.articles article .btn{
+    font: 700 1.125rem "Raleway", sans-serif;
+    color: #D300B7;
+    border: 4px solid #D300B7;
+    border-radius: 56px;
+    margin-top: auto;
+    padding: 10px 30px 10px 30px;
+}
+
+
+
+  
